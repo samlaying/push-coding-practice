@@ -44,9 +44,19 @@
 
 ## 前置依赖
 
-- Claude Code（或兼容 Claude Code skill 的 agent）
-- `lark-cli`（飞书 CLI，需登录且有 drive/base 权限）
-- `git`（配置好 GitHub 远程仓库）
+| 依赖 | 用途 | 安装方式 |
+|---|---|---|
+| **git** | 向 GitHub 推送 | `brew install git` / 系统自带 |
+| **bash** | 运行同步脚本 | 系统自带 |
+| **jq** | 解析 JSON 配置 | `brew install jq` |
+| **lark-cli** | 飞书 OpenAPI 交互（上传文件、操作多维表格） | `npx lark-cli` 或官网安装 |
+| **Claude Code**（或兼容 skill 的 agent） | 触发 skill 执行 | Claude Code CLI |
+
+配置要求：
+
+- `git` 远程仓库（origin）须已配置，当前用户有推送权限
+- `lark-cli` 须已登录（`lark-cli auth login`），且拥有对应云文件夹和 base 的访问权限
+- 本地仓库路径必须在 `config.json` 的 `repo_local_path` 中正确指向，且已是一个 git 仓库
 
 ## 安全性
 
