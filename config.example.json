@@ -1,0 +1,18 @@
+{
+  "repo_local_path": "/path/to/your/coding-practice-repo",
+  "github_remote": "git@github.com:<you>/<repo>.git",
+  "content_root_files": ["README.md", "index.md"],
+  "feishu": {
+    "root_folder_token": "<ROOT_FOLDER_TOKEN>",
+    "root_url": "https://<tenant>.feishu.cn/drive/folder/<ROOT_FOLDER_TOKEN>",
+    "subfolders": {
+      "竞品调研": "<COMPETITOR_RESEARCH_FOLDER_TOKEN>",
+      "github项目分析": "<GITHUB_ANALYSIS_FOLDER_TOKEN>"
+    }
+  },
+  "bitable": {
+    "base_token": "<BASE_TOKEN>",
+    "table_id": "<TABLE_ID>",
+    "url": "https://<tenant>.feishu.cn/base/<BASE_TOKEN>"
+  }
+}
